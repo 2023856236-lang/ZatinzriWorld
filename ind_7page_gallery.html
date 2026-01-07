@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e1f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            color: #333;
+        }
+        
+        /* Content */
+        .content {
+            flex: 1; 
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FF1493;
+        }
+        
+        .audio-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 25px 0;
+        }
+
+        /* Navigation */
+        .nav-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #FF69B4;
+            margin: 0 10px;
+        }
+        .nav-links a:hover {
+            color: #FF1493;
+        }
+
+        hr {
+            border: 1px solid #FF69B4;
+            margin: 20px 0;
+            
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #fdd9ef;
+            border: 2px solid #FF69B4;
+        }
+
+        caption {
+            color: #C71585;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        td {
+            border: 1px solid #FF69B4;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .image-row {
+            background-color: #ffbad8;
+        }
+
+        img {
+            height: 180px;
+            border-radius: 10px;
+            border: 3px solid #FF69B4;
+            display: block;
+            margin: auto;
+        }
+
+        /* Button */
+        .button-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .button-container button {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .button-container button:hover {
+            background-color: #FF1493;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            background-color: #FF69B4;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+
+<h1>Moments That Matter</h1>
+
+ <!-- Navigation -->
+  
+<div class="nav-links">
+    <a href="indv_mainpage.html">Home</a>
+    <a href="indv_secpage_family.html">Family</a>
+    <a href="ind_3page_hobby.html">Hobby</a>
+    <a href="indv_4page_talent.html">Talent</a>
+    <a href="ind_5page_goals.html">Goals</a>
+    <a href="ind_6page_contact.html">Contact</a>
+    <a href="ind_7page_gallery.html">Gallery</a>
+</div>
+
+<hr>
+
+ <div style="display:flex; flex-direction:column; align-items:center; margin:30px 0;">
+
+    <!-- Title in box -->
+    <div style="
+        padding:8px 18px;
+        border:2px solid #FF69B4;
+        border-radius:12px;
+        background-color:#ffe6f0;
+        color:#FF1493;
+        font-weight:bold;
+        margin-bottom:10px;
+    ">
+        I Like Me Better - Lauv
+    </div>
+    <audio controls>
+        <source src="I LIKE ME BETTER.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<!-- Parents gallery -->
+<table>
+    <caption>My Parents, My Strength</caption>
+    <tr class="image-row">
+        <td><img src="parents 2.jpg" alt="Mother"></td>
+        <td><img src="parents 3.jpeg" alt="Father"></td>
+        <td><img src="parents 4.jpeg" alt="Parents Together"></td>
+    </tr>
+    <tr>
+       <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+            My parents are my greatest blessing, guiding me with love, patience, and endless support throughout my journey.
+        </td>
+    </tr>
+</table>
+
+<!-- Siblings gallery -->
+<table>
+    <caption>Big Brothers, Big Love, Little Me</caption>
+    <tr class="image-row">
+        <td><img src="SIBLING 1.jpeg" alt="Siblings 1"></td>
+        <td><img src="SIBLING 3.jpeg" alt="Siblings 2"></td>
+        <td><img src="SIBLING 2.jpeg" alt="Siblings 3"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+          Being the youngest with two big brothers means endless love, care, and a little bit of spoiling every day.
+        </td>
+    </tr>
+</table>
+
+<!-- Baby gallery -->
+<table>
+    <caption>My Baby Picture</caption>
+    <tr class="image-row">
+        <td><img src="childhood 1.jpeg" alt="Baby Zati"></td>
+        <td><img src="childhood 2.jpeg" alt="Baby Zati"></td>
+        <td><img src="childhood 3.jpeg" alt="Baby Zati"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+        Sweet little moments from my childhood that will always stay in my heart.
+        </td>
+    </tr>
+</table>
+
+<!-- Childhood with parents -->
+<table>
+    <caption>Little Me with My Parents</caption>
+    <tr class="image-row">
+        <td><img src="childhood era 1.jpeg" alt="With Mom"></td>
+        <td><img src="childhood era 2.jpeg" alt="With Dad"></td>
+        <td><img src="childhood era 3.jpeg" alt="Family Time"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center; padding:12px; font-style:italic; color:#FF1493; font-weight:bold;">
+            Growing up surrounded by love, care, and warmth from my parents. These little moments mean everything to me.
+        </td>
+    </tr>
+</table>
+
+<!-- Childhood with brothers -->
+<table>
+    <caption>Growing Up with My Brothers</caption>
+    <tr class="image-row">
+        <td><img src="childhood era 4.jpeg" alt="Sibling Moment"></td>
+        <td><img src="childhood era 5.jpeg" alt="Playtime Together"></td>
+        <td><img src="childhood era 7 copy.jpeg" alt="Childhood Memories"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center; padding:12px; font-style:italic; color:#FF1493; font-weight:bold;">
+           Childhood memories with my brothers that will forever stay close to my heart.
+</table>
+
+<!-- Nieces gallery -->
+<table>
+    <caption>Little Loves</caption>
+    <tr class="image-row">
+        <td><img src="ADHWA 1.jpeg" alt="Niece"></td>
+        <td><img src="ADHWA 2.jpeg" alt="Nephew"></td>
+        <td><img src="ADHWA 3.jpeg" alt="Little Family"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+            My one and only little star who always brings joy, laughter and endless love into my life.
+        </td>
+    </tr>
+</table>
+
+ <!--  High school gallery -->
+<table>
+
+    <caption>High School Friends Who Stuck with Me </caption>
+    <tr class="image-row">
+        <td><img src="school friends 1.jpeg" alt="Friend 1"></td>
+        <td><img src="school friends 3.jpeg" alt="Friend 2"></td>
+        <td><img src="school friends 2.jpeg" alt="Friend 3"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+            True friends from high school who stayed by my side through laughter, challenges, and unforgettable memories.
+        </td>
+    </tr>
+</table>
+
+<!-- University friends gallery -->
+<table>
+    <caption>University Friends Who Stood by Me</caption>
+    <tr class="image-row">
+        <td><img src="trio.jpg.jpeg" alt="Friend 1"></td>
+        <td><img src="trio 2.jpeg" alt="Friend 2"></td>
+        <td><img src="trioo 3 - Copy.jpeg" alt="Friend 3"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+             Amazing friends from university who supported me through studies, projects, and unforgettable campus adventures.
+        </td>
+    </tr>
+</table>
+
+<!-- Personal and hobby gallery -->
+<table>
+    <caption>Little Joys in Life</caption>
+    <tr class="image-row">
+        <td><img src="talent 2.jpg" alt="Matcha"></td>
+        <td><img src="talentt 3.jpeg" alt="Concert"></td>
+        <td><img src="TALENT SOLO.jpeg" alt="Self"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+            Showcasing my passion and talent in dancing, expressing creativity, joy, and dedication through every performance.
+        </td>
+    </tr>
+</table>
+
+<table>
+    <caption>The Crew that Makes Dancing Fun</caption>
+    <tr class="image-row">
+        <td><img src="DANCE FRIEND.jpeg" alt="Dance Friend 1"></td>
+        <td><img src="DANCE FRIEND 2.jpeg" alt="Dance Friend 2"></td>
+        <td><img src="DANCE FRIEND 3.jpeg" alt="Dance Friend 3"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center; padding:10px; font-style:italic; color:#FF1493; font-weight:bold;">
+        Friends I dance with who always support me, share laughter and make every performance special.
+        </td>
+    </tr>
+</table>
+
+<!-- Buttons -->
+<div class="button-container">
+    <button onclick="window.location.href='indv_mainpage.html'">Home</button>
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})">Back to Top</button>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+   Memories captured, moments treasured! Celebrate each special time in life.
+</footer>
+
+</body>
+</html>
